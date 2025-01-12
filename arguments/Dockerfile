@@ -1,5 +1,3 @@
 FROM nginx
 
-ARG ARG_NAME
-
-RUN echo "Value of the argument: ${ARG_NAME}"
+COPY index.html /usr/share/nginx/html/index.html
